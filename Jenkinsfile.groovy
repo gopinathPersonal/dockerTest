@@ -35,8 +35,8 @@ pipeline {
 			steps {
 				
 				sh'''
-					systemctl status docker
-					systemctl restart docker
+					systemctl status jenkins
+					systemctl restart jenkins
 				'''
 			} // Steps Completed
 		}  // Stage Completed

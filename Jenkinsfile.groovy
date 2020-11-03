@@ -22,7 +22,10 @@ pipeline {
 				echo 'In SCM Stage'
 				
 				git credentialsId: 'f278eddc-9430-40ea-8dd6-048a31ddca83', url: 'https://github.com/gopinathPersonal/dockerTest.git',branch: 'main'
-
+				sh '''
+					ls
+					pwd
+				'''
 
 			} // Steps Completed
 		}  // Stage Completed	
